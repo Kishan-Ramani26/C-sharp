@@ -51,6 +51,8 @@
     <Compile Include="Practical Assignment-1\PAQ5.cs" />
     <Compile Include="Practical Assignment-1\PAQ6.cs" />
     <Compile Include="Practical Assignment-1\PAQ7.cs" />
+    <Compile Include="Practical Assignment-1\PAQ8.cs" />
+    <Compile Include="Practical Assignment-1\PAQ8_1.cs" />
     <Compile Include="Practical Assignment-1\PSQ1.cs" />
     <Compile Include="Practical Assignment-1\PSQ2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
