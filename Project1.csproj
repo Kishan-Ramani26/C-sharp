@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Practical Assignment-1\PAQ3.cs" />
+    <Compile Include="Practical Assignment-1\PAQ4.cs" />
     <Compile Include="Practical Assignment-1\PSQ1.cs" />
     <Compile Include="Practical Assignment-1\PSQ2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
