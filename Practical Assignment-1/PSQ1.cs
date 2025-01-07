@@ -6,29 +6,50 @@ using System.Threading.Tasks;
 
 namespace Project1
 {
+    public class employe
+    {
+        int age;
+        double salary;
+        string name;
+
+        public void getData(int age,double salary,string name)
+        {
+            this.age = age; 
+            this.salary = salary;
+            this.name = name;
+        }
+
+        public void showData()
+        {
+            Console.WriteLine("Name : " + name);
+            Console.WriteLine("Age : " + age);
+            Console.WriteLine("Salary : " + salary);
+        }
+
+    }
+
+
     internal class PSQ1
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            int age;
+            double salary;
+            string name;
 
-            int num = 0;
-            Console.Write("Enter number : ");
+            Console.Write("Enter Name : ");
+            name = Console.ReadLine();
 
-            num = int.Parse(Console.ReadLine());
+            Console.Write("Enter age : ");
+            age = Int32.Parse(Console.ReadLine());
 
-            if (num == 0)
-            {
-                Console.WriteLine("Number is zero");
-            }
-            else if (num > 1)
-            {
-                Console.WriteLine("Number is positive");
-            }
-            else
-            {
-                Console.WriteLine("Number is Negative");
-            }
-            Console.ReadKey();
+            Console.Write("Enter salary : ");
+            salary = double.Parse(Console.ReadLine());
+
+            employe e1 = new employe();
+
+            e1.getData(age, salary, name);
+            e1.showData();
         }
     }
 }

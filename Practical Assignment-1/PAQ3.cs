@@ -4,22 +4,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project1.Practical_Assignment_1
+namespace Project1
 {
-    internal class PAQ3
+    public class employe
     {
-        static void Main(string[] args)
+        int age;
+        double salary;
+        string name;
+
+        public void getData(int age, double salary, string name)
         {
-            double pi = 3.14, r = 0, area = 0;
+            this.age = age;
+            this.salary = salary;
+            this.name = name;
+        }
 
-            Console.Write("Enter radius of Circle : ");
-            r = Double.Parse(Console.ReadLine());
+        public int getAge() { return age; }
 
-            area = pi * r * r;
+        public void showData()
+        {
+            Console.WriteLine("Name : " + name);
+            Console.WriteLine("Age : " + age);
+            Console.WriteLine("Salary : " + salary);
+        }
 
-            Console.WriteLine("Area of Circle is : " + area);
+    }
 
-            Console.Read();
+
+    internal class PSQ1
+    {
+        public static void Main(string[] args)
+        {
+            int age;
+            double salary;
+            string name;
+
+            Console.Write("Enter Name : ");
+            name = Console.ReadLine();
+
+            Console.Write("Enter age : ");
+            age = Int32.Parse(Console.ReadLine());
+
+            Console.Write("Enter salary : ");
+            salary = double.Parse(Console.ReadLine());
+
+            employe e1 = new employe();
+            employe e2 = new employe();
+            employe e3 = new employe();
+
+
+            e1.getData(age, salary, name);
+            e2.getData(age, salary, name);
+            e3.getData(age, salary, name);
+
+            Console.WriteLine("Oldest Eploye : ");
+
+            if (e1.getAge() > e2.getAge())
+            {
+                e2.showData();
+            }
+            else if (e2.getAge() > e3.getAge()) 
+            { e3.showData(); }
+            else
+            {
+                e1.showData();
+            }
         }
     }
 }
